@@ -1,15 +1,32 @@
+body{
+  margin: 0;
+}
 #newsletter{
   background-color: purple;
+  height: 5vh;
+
+  display: flex;
+  align-items: center;
   }
-#newsletter img{
-  width: 50px;
-}
+
 .logo{
   display: inline-block;
 }
 
-#champs_newsletter div{
+#newsletter img{
+  width: 50px;
+}
+
+#champs_newsletter{
+  width: 100%;
+  justify-self: center;
+}
+
+#champs_newsletter>div{
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
+}
+#champs_newsletter>div>*{
+  margin: 5px;
 }
