@@ -1,15 +1,19 @@
 body{
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
+
+
+/* neweletter */
 #newsletter{
   background-color: purple;
   height: 5vh;
 
   display: flex;
   align-items: center;
-  }
+}
 
-.logo{
+.newsletter>.logo{
   display: inline-block;
 }
 
@@ -30,3 +34,169 @@ body{
 #champs_newsletter>div>*{
   margin: 5px;
 }
+#champs_newsletter>div>span{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+}
+#champs_newsletter>div>input{
+  border:none;
+  border-radius: 3px;
+}
+#champs_newsletter>div>input::placeholder{
+  color: rgb(221, 220, 220);
+  font-style: italic; 
+}
+#champs_newsletter>div>button{
+  border-radius: 3px;
+  color: white;
+  background-color: rgb(60, 214, 94);
+  border:none;
+  text-transform: uppercase;
+}
+
+/* newletter */
+/* nav */
+nav{
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  height: fit-content;
+  border-bottom: solid 1px rgba(128, 128, 128, 0.26);
+}
+nav>.logo{
+  display: flex;
+  height: 12vh;
+  width: 20% ;
+  justify-content: left;
+  align-items: center;
+  height: 75px;
+  margin-left: 40px;
+}
+.logo>img{
+  height: 100%;
+}
+.menu{
+  display: flex;
+  align-content: center;
+  width: 100%;
+}
+.menu>ul{
+  list-style-type: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start ;
+  width: 100%;
+  padding-left: 0;
+  margin: 0;
+  border-left: solid 1px rgba(128, 128, 128, 0.26);
+}.menu>ul>li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  height: 100%;
+}
+.menu>ul>li>a{
+  text-decoration:none ;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+}
+.menu>ul>li:hover>a{
+  border-bottom: solid 3px black;
+}
+.menu>ul>li:last-child{
+  justify-self: flex-end ;
+  
+  flex-grow: 2;
+  text-align: center;
+  border-left: solid 1px rgba(128, 128, 128, 0.26);
+} 
+.menu>ul>li:not(:last-child){
+  flex-grow: 1;
+}
+/* nav */
+/* contenu */
+#contenu {
+  display: flex ;
+  flex-direction: column ;
+  width: 80%;
+  margin: auto 10%;
+}
+
+#contenu>h1  {
+  align-self: center;
+  position: relative;
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.750);
+  
+  border-bottom-width: ;
+  padding: 100px;
+  margin-top: 0px;
+  margin-bottom: 70px;
+}
+#contenu>h1:before {
+  content : "";
+  position: absolute;
+  left    : 43%;
+  bottom  : 0;
+  height  : 1px;
+  width   : 14%;  /* or 100px */
+  border-bottom:5px solid purple;
+}
+#contenu>h2{
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.750);
+}
+#contenu > ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgba(104, 4, 104, 0.815); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  font-size: 50px;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: 0; /* Also needed for space (tweak if needed) */
+}
+#contenu>ul{
+  list-style: none;
+  padding-left: 20px;
+}
+/* contenu */
+/* footer */
+footer{
+  margin-top: 60px;
+  text-align: center;
+  background-color:rgba(0, 0, 0, 0.856);
+}
+#section{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 20px auto;
+  padding:  60px  0px;
+  position: relative;
+  border-bottom: solid 1px rgba(226, 226, 226, 0.26);
+}
+#section>div>a{
+  padding: 30px;
+  text-decoration:none ;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+footer>img{
+  height: 100px;
+  padding: 50px;
+}
+
+footer>p{
+  margin-bottom: 0px;
+  padding-bottom: 45px;
+  font-size: 10px;
+  color:rgba(226, 226, 226, 0.26);
+}
+/* footer */
+
+
